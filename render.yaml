@@ -3,13 +3,14 @@ services:
   name: kibana
   env: docker
   dockerfilePath: ./esDockerfile
+  plan: standard plus
   envVars:
   - key: ELASTICSEARCH_HOSTS
-    value: "http://elasticsearch-28db:9200"
+    value: "http://elasticsearch1:9200"
 - type: pserv
   name: elasticsearch1
   env: docker
-  plan: standard
+  plan: standard plus
   disk:
     name: esdata
     mountPath: /usr/share/elasticsearch/data
