@@ -5,9 +5,9 @@ services:
   dockerfilePath: ./esDockerfile
   envVars:
   - key: ELASTICSEARCH_HOSTS
-    value: "http://elasticsearch:9200"
+    value: "http://elasticsearch-28db:9200"
 - type: pserv
-  name: elasticsearch
+  name: elasticsearch1
   env: docker
   plan: standard
   disk:
@@ -22,3 +22,4 @@ services:
     value: single-node
   - key: cluster.name
     value: elastic
+  
