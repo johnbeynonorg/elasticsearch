@@ -23,7 +23,7 @@ services:
     value: single-node
   - key: cluster.name
     value: elastic
-  - type: pserv
+- type: pserv
   name: elasticsearch2
   env: docker
   plan: standard plus
