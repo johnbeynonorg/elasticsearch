@@ -6,7 +6,7 @@ services:
   plan: standard plus
   envVars:
   - key: ELASTICSEARCH_HOSTS
-    value: "http://elasticsearch1:9200,http://elasticsearch2:9200"
+    value: '["http://elasticsearch1:9200","http://elasticsearch2:9200"]'
 - type: pserv
   name: elasticsearch1
   env: docker
