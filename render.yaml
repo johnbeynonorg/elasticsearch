@@ -2,7 +2,7 @@ services:
 - type: web
   name: kibana
   env: Docker
-  DockerfilePath: esDockerfile
+  DockerfilePath: ./esDockerfile
   envVars:
   - ELASTICSEARCH_HOSTS: http://elasticsearch:9200
 - type: pserv
